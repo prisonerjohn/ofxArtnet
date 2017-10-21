@@ -41,7 +41,7 @@ void ofxArtnet::setup(const char* interfaceIP, int port_addr, int verbose)
         printf("send poll failed: %s\n", artnet_strerror() );
         goto error_destroy;
 	}
-    startThread(true, false);
+    startThread();
     return;
     
     error_destroy :
