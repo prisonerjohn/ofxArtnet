@@ -29,6 +29,7 @@ typedef int socklen_t;
 #include <winsock2.h>
 #include <Lm.h>
 #include <iphlpapi.h>
+#pragma comment(lib, "IPHLPAPI.lib")
 #endif
 
 #include "private.h"
